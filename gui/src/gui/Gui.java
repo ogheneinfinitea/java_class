@@ -11,11 +11,6 @@ package gui;
  */
 import javax.swing.*;
 public class Gui {
-    JFrame f;
-     Gui() {
-         f = new JFrame();
-         JOptionPane.showMessageDialog(f,"Hello, Welcont to GUI");
-    }
    
 
     /**
@@ -23,7 +18,12 @@ public class Gui {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new Gui();
+     String abc = JOptionPane.showInputDialog("Enter Number 1");
+     int a = Integer.parseInt(abc);
+     String abcd = JOptionPane.showInputDialog("Enter Number 2");
+     int ad = Integer.parseInt(abcd);
+    double add = a + ad;
+    JOptionPane.showMessageDialog(null, add);
     }
     
 }
